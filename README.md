@@ -5,7 +5,7 @@ In this project, a simple charity organization is replicated. The smart contract
 ## Installation
 
 ```bash
-git clone repo
+git clone https://github.com/svozkan/simple-charity-contract
 yarn
 ```
 
@@ -56,7 +56,7 @@ Calling donateCharity function adds your attached deposit to the Charity. Charit
 near call $CONTRACT donateCharity '{"id": 3445841460, "message": "some message"}' --accountId svolkan.testnet --deposit 1
 ```
 
-![Donate Charity](./figures/createCharity.png)
+![Donate Charity](./figures/donateCharity.png)
 
 
 Only the owner can close the charity.
