@@ -1,0 +1,29 @@
+{
+  "name": "simple-charity-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.20.4",
+    "asbuild": "^0.2.0",
+    "assemblyscript": "^0.20.4",
+    "near-cli": "^3.2.0",
+    "near-sdk-as": "^3.2.3"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  },
+  "scripts": {
+    "build:release": "asb",
+    "deploy": "near dev-deploy build/release/simple-charity-contract.wasm",
+    "dev": "yarn build:release && yarn deploy",
+    "test": "asp"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.20.4"
+  }
+}
