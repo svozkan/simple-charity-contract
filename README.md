@@ -2,6 +2,8 @@
 
 In this project, a simple charity organization is replicated. The smart contract is capable of creating charity, accepting donations and finally closing the charity. Users can also look for the latest donationns and total amount collected in all charities.
 
+![Project Explanations](https://www.loom.com/share/d5197af2399940f28522694ccb60087d)
+
 ## Installation
 
 ```bash
@@ -42,7 +44,7 @@ Charity owner cannot open another one until the first one is completed.
 
 ![Owner Has Another Charity](./figures/ownerAnotherCharity.png)
 
-By using following view calls charities can be viewed. getCharities calls all charities starting between (start, start + limit).
+By using the following view calls charities can be viewed. getCharities function gets all charities between (start, start + limit).
 
 ```bash
 near view $CONTRACT getCharitById '{"id": 3445841460}'
